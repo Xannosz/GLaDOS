@@ -38,6 +38,10 @@ public abstract class Component {
 		return result;
 	}
 
+	protected void log(String log) {
+		manager.log(name, log);
+	}
+
 	protected abstract ComponentCheckResult getCheckResult();
 
 	protected abstract void run();

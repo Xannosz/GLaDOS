@@ -7,8 +7,9 @@ public abstract class AbstractBox extends HtmlComponent {
 
 	private List<HtmlComponent> components = new ArrayList<>();
 
-	public void add(HtmlComponent component) {
+	public AbstractBox add(HtmlComponent component) {
 		components.add(component);
+		return this;
 	}
 
 	@Override

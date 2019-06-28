@@ -19,17 +19,20 @@ public class RequestHandler implements HttpHandler {
 
 	public RequestHandler(Manager manager) {
 		this.manager = manager;
-		theme.add(new CssComponent(new Selector("nav")).addAttribute(CssAttribute.HEIGHT.set("100%"))
-				.addAttribute(CssAttribute.WIDTH.set("250px")).addAttribute(CssAttribute.POSITION.set("fixed"))
-				.addAttribute(CssAttribute.Z_INDEX.set("1")).addAttribute(CssAttribute.TOP.set("0"))
-				.addAttribute(CssAttribute.LEFT.set("0")).addAttribute(CssAttribute.BACKGROUND_COLOR.set("#111"))
-				.addAttribute(CssAttribute.OVERFLOW_X.set("hidden"))
-				.addAttribute(CssAttribute.PADDING_TOP.set("60px")));
-		theme.add(new CssComponent(new Selector("nav a")).addAttribute(CssAttribute.PADDING.set("8px 8px 8px 32px"))
-				.addAttribute(CssAttribute.TEXT_DECORATION.set("none")).addAttribute(CssAttribute.FONT_SIZE.set("25px"))
-				.addAttribute(CssAttribute.COLOR.set("#00ff00")).addAttribute(CssAttribute.DISPLAY.set("block"))
-				.addAttribute(CssAttribute.TRANSITION.set("0.3s")));
-		theme.add(new CssComponent(new Selector("nav a:hover")).addAttribute(CssAttribute.COLOR.set("#f1f1f1")));
+		theme.add(new CssComponent(new Selector("nav")).addAttribute(CssAttribute.HEIGHT, "100%")
+				.addAttribute(CssAttribute.WIDTH, "15%").addAttribute(CssAttribute.POSITION, "fixed")
+				.addAttribute(CssAttribute.Z_INDEX, "1").addAttribute(CssAttribute.TOP, "0")
+				.addAttribute(CssAttribute.LEFT, "0").addAttribute(CssAttribute.BACKGROUND_COLOR, "#073642")
+				.addAttribute(CssAttribute.OVERFLOW_X, "hidden").addAttribute(CssAttribute.PADDING_TOP, "60px"));
+		theme.add(new CssComponent(new Selector("nav a")).addAttribute(CssAttribute.PADDING, "8px 8px 8px 32px")
+				.addAttribute(CssAttribute.TEXT_DECORATION, "none").addAttribute(CssAttribute.FONT_SIZE, "25px")
+				.addAttribute(CssAttribute.COLOR, "#2aa198").addAttribute(CssAttribute.DISPLAY, "block")
+				.addAttribute(CssAttribute.TRANSITION, "0.3s").addAttribute(CssAttribute.BORDER, "2px")
+				.addAttribute(CssAttribute.BORDER_STYLE, "solid").addAttribute(CssAttribute.MARGIN, "10px")
+				.addAttribute(CssAttribute.BORDER_RADIUS, "25px").addAttribute(CssAttribute.TEXT_ALIGN, "center"));
+		theme.add(new CssComponent(new Selector("nav a:hover")).addAttribute(CssAttribute.COLOR, "#268bd2"));
+		theme.add(new CssComponent(new Selector("body")).addAttribute(CssAttribute.BACKGROUND_COLOR, "#002b36")
+				.addAttribute(CssAttribute.COLOR, "#2aa198").addAttribute(CssAttribute.MARGIN, "2% 2% 2% 18%"));
 		ThemeHandler.registerTheme(theme);
 	}
 
