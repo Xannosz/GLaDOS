@@ -31,8 +31,17 @@ public class RequestHandler implements HttpHandler {
 				.addAttribute(CssAttribute.BORDER_STYLE, "solid").addAttribute(CssAttribute.MARGIN, "10px")
 				.addAttribute(CssAttribute.BORDER_RADIUS, "25px").addAttribute(CssAttribute.TEXT_ALIGN, "center"));
 		theme.add(new CssComponent(new Selector("nav a:hover")).addAttribute(CssAttribute.COLOR, "#268bd2"));
+		theme.add(new CssComponent(new Selector("nav a[href=\"#\"]")).addAttribute(CssAttribute.COLOR, "#6c71c4"));
 		theme.add(new CssComponent(new Selector("body")).addAttribute(CssAttribute.BACKGROUND_COLOR, "#002b36")
 				.addAttribute(CssAttribute.COLOR, "#2aa198").addAttribute(CssAttribute.MARGIN, "2% 2% 2% 18%"));
+		theme.add(new CssComponent(new Selector("table")).addAttribute(CssAttribute.WIDTH, "80%"));
+		theme.add(new CssComponent(new Selector("th")).addAttribute(CssAttribute.COLOR, "#6c71c4")
+				.addAttribute(CssAttribute.PADDING, "2%"));
+		theme.add(new CssComponent(new Selector("td")).addAttribute(CssAttribute.PADDING, "2%")
+				.addAttribute(CssAttribute.TEXT_ALIGN, "center"));
+		theme.add(new CssComponent(new Selector("tr:nth-child(even)"))
+				.addAttribute(CssAttribute.BACKGROUND_COLOR, "#073642")
+				.addAttribute(CssAttribute.TEXT_ALIGN, "center"));
 		ThemeHandler.registerTheme(theme);
 	}
 

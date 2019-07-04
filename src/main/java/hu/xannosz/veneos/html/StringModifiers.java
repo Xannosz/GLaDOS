@@ -2,9 +2,9 @@ package hu.xannosz.veneos.html;
 
 public enum StringModifiers {
 
-	BR("br"), B("b"), CITE("cite"), CODE("code"), DFN("dfn"), EM("em"), HR("hr"), I("i"), MARK("mark"), //
-	Q("q"), S("s"), SAMP("samp"), SMALL("small"), //
-	STRONG("strong"), SUB("sub"), SUP("sup"), TIME("time"), U("u"), WBR("wbr");
+	BR("br"), B("b"), BDI("bdi"), CITE("cite"), CODE("code"), DEL("del"), DFN("dfn"), EM("em"), HR("hr"), I("i"), //
+	INS("ins"), KBD("kbd"),MARK("mark"), PRE("pre"),Q("q"), S("s"), SAMP("samp"), SMALL("small"), //
+	STRONG("strong"), SUB("sub"), SUP("sup"), TIME("time"), U("u"),VAR("var"), WBR("wbr");
 
 	private String tag;
 
@@ -12,7 +12,7 @@ public enum StringModifiers {
 		this.tag = tag;
 	}
 
-	public String getSyntax(String element) {
+	public String set(String element) {
 		return "<" + tag + ">" + element + "</" + tag + ">";
 	}
 

@@ -6,10 +6,13 @@ public class Table extends HtmlComponent {
 
 	private java.util.List<java.util.List<HtmlComponent>> rows = new ArrayList<>();
 	private java.util.List<HtmlComponent> actualRow = new ArrayList<>();
+	private java.util.List<HtmlComponent> headRow = new ArrayList<>();
 
 	public Table newRow() {
-		rows.add(actualRow);
-		actualRow = new ArrayList<>();
+		if (!actualRow.isEmpty()) {
+			rows.add(actualRow);
+			actualRow = new ArrayList<>();
+		}
 		return this;
 	}
 
@@ -22,6 +25,15 @@ public class Table extends HtmlComponent {
 		return add(new StringHtmlComponent(component));
 	}
 
+	public Table addHead(HtmlComponent component) {
+		headRow.add(component);
+		return this;
+	}
+
+	public Table addHead(String component) {
+		return addHead(new StringHtmlComponent(component));
+	}
+
 	@Override
 	protected String getTag() {
 		return "table";
@@ -31,6 +43,13 @@ public class Table extends HtmlComponent {
 	protected String getContent() {
 		newRow();
 		StringBuilder builder = new StringBuilder();
+		builder.append("<tr>");
+		for (HtmlComponent comp : headRow) {
+			builder.append("<th>");
+			builder.append(comp.getSyntax());
+			builder.append("</th>");
+		}
+		builder.append("</tr>");
 		for (java.util.List<HtmlComponent> row : rows) {
 			builder.append("<tr>");
 			for (HtmlComponent comp : row) {

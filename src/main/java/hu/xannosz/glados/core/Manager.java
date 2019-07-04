@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.lang.exception.ExceptionUtils;
+
 import hu.xannosz.glados.component.Component;
 import hu.xannosz.glados.component.DocumentOrdererComponent;
 import hu.xannosz.glados.component.LoggerComponent;
@@ -23,7 +25,12 @@ public class Manager {
 			log("Manager", "Run state: " + i);
 			for (Component component : components) {
 				if (component.isActive()) {
-					component.tick();
+					try {
+						component.tick();
+					} catch (Exception e) {
+						log("Manager", "Exception in component: " + component.getName() + " Exception: "
+								+ ExceptionUtils.getFullStackTrace(e));
+					}
 				}
 			}
 			Sleep.sleepSeconds(10);

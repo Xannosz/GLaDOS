@@ -21,7 +21,7 @@ public class LoggerComponent extends Component {
 	public void log(String name, String log) {
 		LogRow row = new LogRow();
 		Calendar cal = Calendar.getInstance();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.DD HH:mm:ss.SSS");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss.SSS");
 		row.name = name;
 		row.log = log;
 		row.time = sdf.format(cal.getTime());
@@ -32,7 +32,7 @@ public class LoggerComponent extends Component {
 	protected ComponentCheckResult getCheckResult() {
 		ComponentCheckResult result = new ComponentCheckResult();
 		Table table = new Table();
-		table.add("Name").add("Log").add("Time");
+		table.addHead("Name").addHead("Log").addHead("Time");
 		for (LogRow log : logs) {
 			table.newRow().add(log.name).add(log.log).add(log.time);
 		}

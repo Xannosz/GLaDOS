@@ -27,7 +27,7 @@ public class DocumentOrdererComponent extends Component {
 	public DocumentOrdererComponent(Manager manager) {
 		super(manager, "Document Orderer System");
 		setActive(true);
-		tickSpeed = 20;
+		tickSpeed = 2;
 	}
 
 	private void copyDirectory(File original, File copied) {
@@ -104,6 +104,8 @@ public class DocumentOrdererComponent extends Component {
 		unAccessibleFolders = new ArrayList<>();
 		for (Triplet<String, String, String> row : data) {
 			recognizedFolders.add(row.getFirst());
+		}
+		for (Triplet<String, String, String> row : data) {
 			handleFolder(row);
 		}
 		deadRecognizedFolders = new ArrayList<>(recognizedFolders);
@@ -114,7 +116,7 @@ public class DocumentOrdererComponent extends Component {
 	private void createNewSection() {
 
 		Table folders = new Table();
-		folders.add("Folder Name").add("State");
+		folders.addHead("Folder Name").addHead("State");
 		for (String folder : unRecognizedFolders) {
 			folders.newRow().add(folder).add("Unrecognized");
 		}
@@ -126,7 +128,7 @@ public class DocumentOrdererComponent extends Component {
 		}
 
 		Table handled = new Table();
-		handled.add("Original").add("Target").add("Strategy");
+		handled.addHead("Original").addHead("Target").addHead("Strategy");
 		for (Triplet<String, String, String> row : data) {
 			handled.newRow().add(row.getFirst()).add(row.getSecond()).add(row.getThird());
 		}
