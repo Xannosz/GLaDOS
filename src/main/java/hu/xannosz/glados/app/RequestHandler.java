@@ -24,7 +24,7 @@ public class RequestHandler implements HttpHandler {
 				.addAttribute(CssAttribute.Z_INDEX, "1").addAttribute(CssAttribute.TOP, "0")
 				.addAttribute(CssAttribute.LEFT, "0").addAttribute(CssAttribute.BACKGROUND_COLOR, "#073642")
 				.addAttribute(CssAttribute.OVERFLOW_X, "hidden").addAttribute(CssAttribute.PADDING_TOP, "60px"));
-		theme.add(new CssComponent(new Selector("nav a")).addAttribute(CssAttribute.PADDING, "8px 8px 8px 32px")
+		theme.add(new CssComponent(new Selector("nav a")).addAttribute(CssAttribute.PADDING, "3px")
 				.addAttribute(CssAttribute.TEXT_DECORATION, "none").addAttribute(CssAttribute.FONT_SIZE, "25px")
 				.addAttribute(CssAttribute.COLOR, "#2aa198").addAttribute(CssAttribute.DISPLAY, "block")
 				.addAttribute(CssAttribute.TRANSITION, "0.3s").addAttribute(CssAttribute.BORDER, "2px")

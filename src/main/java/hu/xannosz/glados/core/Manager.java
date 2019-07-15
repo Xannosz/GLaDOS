@@ -30,6 +30,7 @@ public class Manager {
 					} catch (Exception e) {
 						log("Manager", "Exception in component: " + component.getName() + " Exception: "
 								+ ExceptionUtils.getFullStackTrace(e));
+						component.setActive(false);
 					}
 				}
 			}

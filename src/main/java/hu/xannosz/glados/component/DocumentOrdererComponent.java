@@ -22,17 +22,18 @@ public class DocumentOrdererComponent extends Component {
 	private List<String> unRecognizedFolders;
 	private List<String> unAccessibleFolders;
 	private List<String> deadRecognizedFolders;
+	private List<String> extrudedFolders;
 	private Section section = new Section();
 
 	public DocumentOrdererComponent(Manager manager) {
 		super(manager, "Document Orderer System");
 		setActive(true);
-		tickSpeed = 2;
+		tickSpeed = 20;
 	}
 
 	private void copyDirectory(File original, File copied) {
 		try {
-			FileUtils.copyDirectory(original, copied);
+			FileUtils.copyDirectory(original, copied); // TODO
 		} catch (IOException e) {
 			log("Directory copy problem. Original: " + original.getAbsolutePath() + " Target: "
 					+ copied.getAbsolutePath() + " Exception: " + ExceptionUtils.getFullStackTrace(e));
@@ -57,7 +58,7 @@ public class DocumentOrdererComponent extends Component {
 				for (File file : folder.listFiles()) {
 					boolean recognized = false;
 					for (String f : recognizedFolders) {
-						if (file.getAbsolutePath().equals(f)) {
+						if (file.getAbsolutePath().startsWith(f)) {
 							recognized = true;
 							deadRecognizedFolders.remove(f);
 						}
@@ -102,13 +103,18 @@ public class DocumentOrdererComponent extends Component {
 		unRecognizedFolders = new ArrayList<>();
 		recognizedFolders = new ArrayList<>();
 		unAccessibleFolders = new ArrayList<>();
+		extrudedFolders = new ArrayList<>();
 		for (Triplet<String, String, String> row : data) {
-			recognizedFolders.add(row.getFirst());
+			if (row.getThird().equals("Extruded")) {
+				extrudedFolders.add(row.getFirst());
+			} else {
+				recognizedFolders.add(row.getFirst());
+			}
 		}
+		deadRecognizedFolders = new ArrayList<>(recognizedFolders);
 		for (Triplet<String, String, String> row : data) {
 			handleFolder(row);
 		}
-		deadRecognizedFolders = new ArrayList<>(recognizedFolders);
 		findNewFolders();
 		createNewSection();
 	}
@@ -139,22 +145,28 @@ public class DocumentOrdererComponent extends Component {
 	private void handleFolder(Triplet<String, String, String> row) {
 		switch (row.getThird()) {
 		case "Copy":
+			deadRecognizedFolders.remove(row.getFirst());
 			copyDirectory(new File(row.getFirst()), new File(row.getSecond()));
 			return;
 		case "Sync":
+			deadRecognizedFolders.remove(row.getFirst());
 			copyDirectory(new File(row.getFirst()), new File(row.getSecond()));
 			copyDirectory(new File(row.getSecond()), new File(row.getFirst()));
 			return;
 		case "Delete":
+			deadRecognizedFolders.remove(row.getFirst());
 			deleteSubFolders(new File(row.getFirst()));
 			return;
 		case "Move":
+			deadRecognizedFolders.remove(row.getFirst());
 			copyDirectory(new File(row.getFirst()), new File(row.getSecond()));
 			deleteSubFolders(new File(row.getFirst()));
 			return;
 		case "Scan":
+			deadRecognizedFolders.remove(row.getFirst());
 			findFolder(new File(row.getFirst()));
 			return;
+		case "Extruded":
 		case "Ignore":
 			return;
 		default:

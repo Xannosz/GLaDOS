@@ -15,11 +15,6 @@ C:\System Volume Information;;Ignore
 C:\Users\All Users;;Ignore
 C:\Users\Default;;Ignore
 C:\Users\Default User;;Ignore
-C:\Users\kissa\AppData\Local\Application Data;;Ignore
-C:\Users\kissa\AppData\Local\ElevatedDiagnostics;;Ignore
-C:\Users\kissa\AppData\Local\History;;Ignore
-C:\Users\kissa\AppData\Local\Microsoft;;Ignore
-C:\Users\kissa\AppData\Local\Temporary Internet Files;;Ignore
 C:\Users\kissa\Local Settings;;Ignore
 C:\Users\kissa\NetHood;;Ignore
 C:\Users\kissa\PrintHood;;Ignore
@@ -69,10 +64,7 @@ C:\Program Files\Internet Explorer;;Ignore
 C:\Program Files\Java;;Ignore
 C:\Program Files\KMSpico;;Ignore
 C:\Program Files\MATLAB;;Ignore
-C:\Program Files\Microsoft Analysis Services;;Ignore
-C:\Program Files\Microsoft Office;;Ignore
-C:\Program Files\Microsoft SQL Server;;Ignore
-C:\Program Files\Microsoft.NET;;Ignore
+C:\Program Files\Microsoft;;Ignore
 C:\Program Files\ModifiableWindowsApps;;Ignore
 C:\Program Files\MySQL;;Ignore
 C:\Program Files\NVIDIA Corporation;;Ignore
@@ -91,17 +83,7 @@ C:\Program Files\TOSHIBA\Teco;D:\Google Drive\Andromeda\Toshiba\Teco;Copy
 C:\Program Files\Uninstall Information;;Ignore
 C:\Program Files\VideoLAN;;Ignore
 C:\Program Files\Warcraft III;;Ignore
-C:\Program Files\Windows Defender;;Ignore
-C:\Program Files\Windows Defender Advanced Threat Protection;;Ignore
-C:\Program Files\Windows Mail;;Ignore
-C:\Program Files\Windows Media Player;;Ignore
-C:\Program Files\Windows Multimedia Platform;;Ignore
-C:\Program Files\Windows NT;;Ignore
-C:\Program Files\Windows Photo Viewer;;Ignore
-C:\Program Files\Windows Portable Devices;;Ignore
-C:\Program Files\Windows Security;;Ignore
-C:\Program Files\Windows Sidebar;;Ignore
-C:\Program Files\WindowsPowerShell;;Ignore
+C:\Program Files\Windows;;Ignore
 C:\Program Files\WinRAR;;Ignore
 C:\Program Files (x86);;Scan
 C:\Program Files (x86)\Adobe;;Ignore
@@ -118,12 +100,7 @@ C:\Program Files (x86)\Google;;Ignore
 C:\Program Files (x86)\InstallShield Installation Information;;Ignore
 C:\Program Files (x86)\Intel;;Ignore
 C:\Program Files (x86)\Internet Explorer;;Ignore
-C:\Program Files (x86)\Microsoft Analysis Services;;Ignore
-C:\Program Files (x86)\Microsoft Games;;Scan
-C:\Program Files (x86)\Microsoft Games\Rise Of Legends;;Ignore
-C:\Program Files (x86)\Microsoft Office;;Ignore
-C:\Program Files (x86)\Microsoft SQL Server;;Ignore
-C:\Program Files (x86)\Microsoft.NET;;Ignore
+C:\Program Files (x86)\Microsoft;;Ignore
 C:\Program Files (x86)\Minecraft;;Ignore
 C:\Program Files (x86)\Mozilla Firefox;;Ignore
 C:\Program Files (x86)\Notepad++;D:\Google Drive\Andromeda\Programs\Notepad;Copy
@@ -136,18 +113,93 @@ C:\Program Files (x86)\Steam;;Ignore
 C:\Program Files (x86)\USB Camera;;Ignore
 C:\Program Files (x86)\VulkanRT;;Ignore
 C:\Program Files (x86)\Warcraft III;;Ignore
-C:\Program Files (x86)\Windows Defender;;Ignore
-C:\Program Files (x86)\Windows Mail;;Ignore
-C:\Program Files (x86)\Windows Media Player;;Ignore
-C:\Program Files (x86)\Windows Multimedia Platform;;Ignore
-C:\Program Files (x86)\Windows NT;;Ignore
-C:\Program Files (x86)\Windows Photo Viewer;;Ignore
-C:\Program Files (x86)\Windows Portable Devices;;Ignore
-C:\Program Files (x86)\Windows Sidebar;;Ignore
-C:\Program Files (x86)\WindowsPowerShell;;Ignore
+C:\Program Files (x86)\Windows;;Ignore
 C:\Program Files (x86)\WinSCP;;Ignore
 C:\swapfile.sys;;Ignore
 C:\winutils;;Ignore
-;;Ignore
-C:\Program Files\MongoDB;;Ignore
-C:\Users;;Ignore
+C:\Users;;Scan
+C:\Users\desktop.ini;;Ignore
+C:\Users\kissa;;Scan
+C:\Users\kissa\.emulator_console_auth_token;;Ignore
+C:\Users\kissa\.gitconfig;;Ignore
+C:\Users\kissa\ccemuredux-launcher.jar;;Ignore
+C:\Users\kissa\.android;;Ignore
+C:\Users\kissa\.AndroidStudio3.1;;Ignore
+C:\Users\kissa\.cache;;Ignore
+C:\Users\kissa\.config;;Ignore
+C:\Users\kissa\.eclipse;;Ignore
+C:\Users\kissa\.gradle;;Ignore
+C:\Users\kissa\.idlerc;;Ignore
+C:\Users\kissa\.m2;;Ignore
+C:\Users\kissa\.p2;;Ignore
+C:\Users\kissa\3D Objects;;Ignore
+C:\Users\kissa\Contacts;;Ignore
+C:\Users\kissa\Desktop;;Ignore
+C:\Users\kissa\Documents;;Scan
+C:\Users\kissa\Documents\Adobe;;Ignore
+C:\Users\kissa\Documents\Any Video Converter;;Ignore
+C:\Users\kissa\Documents\Audacity;D:\Google Drive\Andromeda\Audacity;Copy
+C:\Users\kissa\Documents\Egyéni Office-sablonok;;Ignore
+C:\Users\kissa\Documents\GitHub;;Ignore
+C:\Users\kissa\Documents\Klei;;Scan
+C:\Users\kissa\Documents\Klei\OxygenNotIncluded;;Ignore
+C:\Users\kissa\Documents\Klei\OxygenNotIncluded\save_files;D:\Google Drive\Andromeda\Mentesek\OxygenNotIncluded\save_files;Copy
+C:\Users\kissa\Documents\MATLAB;D:\Google Drive\Andromeda\Mentesek\MATLAB;Copy
+C:\Users\kissa\Documents\MCEdit;;Ignore
+C:\Users\kissa\Documents\My Games;D:\Google Drive\Andromeda\Mentesek\MGames;Copy
+C:\Users\kissa\Documents\Default.rdp;;Ignore
+C:\Users\kissa\Documents\Register Vegas Pro.htm;;Ignore
+C:\Users\kissa\Documents\desktop.ini;;Ignore
+C:\Users\kissa\Downloads;;Ignore
+C:\Users\kissa\Favorites;;Ignore
+C:\Users\kissa\git;;Ignore
+C:\Users\kissa\IntelGraphicsProfiles;;Ignore
+C:\Users\kissa\Links;;Ignore
+C:\Users\kissa\MCedit;;Ignore
+C:\Users\kissa\MicrosoftEdgeBackups;;Ignore
+C:\Users\kissa\Music;D:\Google Drive\Andromeda\Music;Sync
+C:\Users\kissa\NTUSER.DAT;;Ignore
+C:\Users\kissa\ntuser;;Ignore
+C:\Users\kissa\OneDrive;;Ignore
+C:\Users\kissa\Saved Games;;Ignore
+C:\Users\kissa\Searches;;Ignore
+C:\Users\kissa\Pictures;D:\Google Drive\Andromeda\Pictures;Copy
+C:\Users\kissa\Videos;D:\Google Drive\Andromeda\Videos;Copy
+C:\Users\kissa\AppData;;Scan
+C:\Users\kissa\AppData\Local;;Ignore
+C:\Users\kissa\AppData\LocalLow;;Ignore
+C:\Users\kissa\AppData\Roaming;;Scan
+C:\Users\kissa\AppData\Roaming\.ccemuredux;;Ignore
+C:\Users\kissa\AppData\Roaming\.ccemuredux\sessions;D:\Google Drive\Andromeda\Mentesek\CEMU\sessions;Copy
+C:\Users\kissa\AppData\Roaming\.minecraft;;Ignore
+C:\Users\kissa\AppData\Roaming\.minecraft\saves;D:\Google Drive\Andromeda\Mentesek\Minecraft\saves;Copy
+C:\Users\kissa\AppData\Roaming\.mono;;Ignore
+C:\Users\kissa\AppData\Roaming\Adobe;;Ignore
+C:\Users\kissa\AppData\Roaming\Anvsoft;;Ignore
+C:\Users\kissa\AppData\Roaming\audacity;;Ignore
+C:\Users\kissa\AppData\Roaming\BitTorrent;;Ignore
+C:\Users\kissa\AppData\Roaming\dvdcss;;Ignore
+C:\Users\kissa\AppData\Roaming\Easy Thumbnails;;Ignore
+C:\Users\kissa\AppData\Roaming\FontForge;;Ignore
+C:\Users\kissa\AppData\Roaming\GIMP;;Ignore
+C:\Users\kissa\AppData\Roaming\GitHub Desktop;;Ignore
+C:\Users\kissa\AppData\Roaming\Google;;Ignore
+C:\Users\kissa\AppData\Roaming\java;;Ignore
+C:\Users\kissa\AppData\Roaming\MathWorks;;Ignore
+C:\Users\kissa\AppData\Roaming\Microsoft;;Ignore
+C:\Users\kissa\AppData\Roaming\Mozilla;;Ignore
+C:\Users\kissa\AppData\Roaming\MySQL;;Ignore
+C:\Users\kissa\AppData\Roaming\Notepad++;;Ignore
+C:\Users\kissa\AppData\Roaming\npm-cache;;Ignore
+C:\Users\kissa\AppData\Roaming\NVIDIA;;Ignore
+C:\Users\kissa\AppData\Roaming\Scribus;;Ignore
+C:\Users\kissa\AppData\Roaming\Sony;;Ignore
+C:\Users\kissa\AppData\Roaming\SQL Developer;;Ignore
+C:\Users\kissa\AppData\Roaming\sqldeveloper;;Ignore
+C:\Users\kissa\AppData\Roaming\Sun;;Ignore
+C:\Users\kissa\AppData\Roaming\TS3Client;;Ignore
+C:\Users\kissa\AppData\Roaming\vlc;;Ignore
+C:\Users\kissa\AppData\Roaming\Wargaming.net;;Ignore
+C:\Users\kissa\AppData\Roaming\WinBatch;;Ignore
+C:\Users\kissa\AppData\Roaming\WinRAR;;Ignore
+C:\Users\kissa\AppData\Roaming\winscp.rnd;;Ignore
